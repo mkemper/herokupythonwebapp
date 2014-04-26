@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -11,6 +12,4 @@ def hello():
 
 def index():
 
-    return render_template("index.html,
-        title = 'TestApp',
-        user = 'Gustave Gans')
+    return render_template("index.html,title = 'TestApp',user = 'Gustave Gans'")
